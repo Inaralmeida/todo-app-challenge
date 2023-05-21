@@ -13,8 +13,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/mediaQueries.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaQueries.css" />
 
     <title>Todo app |Frontend Mentor</title>
     <script src="./js/main.js" defer type="module"></script>
@@ -26,17 +26,33 @@
         <img src="./images/icon-sun.svg" class="btn-theme" />
       </section>
 
-      <section>
+      <section class="input-todo box line">
         <div>
-          <span class="icon circle"></span>
-          <input type="text" class="input-new-note" />
+          <span class="icon circle checked"></span>
+          <input type="text" class="input-new-note" placeholder="Crie uma nova tarefa" />
         </div>
         <img src="./images/icon-check.svg" alt="" class="icon check" />
       </section>
 
-      <section>
+      <section class="box container-list">
         <ul class="list">
-          <li>
+          <li class="line">
+            <div>
+              <span class="icon circle checked">
+                <img src="./images/icon-check.svg" alt="" class="check iconChecked" />
+              </span>
+              <p>Text</p>
+            </div>
+            <img src="./images/icon-cross.svg" alt="" class="icon check" />
+          </li>
+          <li class="line">
+            <div>
+              <span class="icon circle"></span>
+              <p>Text</p>
+            </div>
+            <img src="./images/icon-cross.svg" alt="" class="icon check" />
+          </li>
+          <li class="line">
             <div>
               <span class="icon circle"></span>
               <p>Text</p>
@@ -45,18 +61,16 @@
           </li>
         </ul>
 
-        <li>
+        <li class="infos box">
           <p><span>5</span> Itens pendentes</p>
-          <p>Excluir tudo</p>
+          <button class="btn-options">Excluir tudo</button>
         </li>
       </section>
 
-      <section>
-        <ul>
-          <li>Todos</li>
-          <li>Pendentes</li>
-          <li>Finalizados</li>
-        </ul>
+      <section class="box btns">
+        <button class="btn-options">Todos</button>
+        <button class="btn-options">Pendentes</button>
+        <button class="btn-options">Finalizados</button>
       </section>
     </main>
   </body>
