@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/mediaQueries.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Todo app |Frontend Mentor</title>
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <h1>TODO</h1>
+        <img src="./images/icon-sun.svg" class="btn-theme" />
+      </section>
+
+      <section>
+        <div>
+          <span class="icon circle"></span>
+          <input type="text" class="input-new-note" />
+        </div>
+        <img src="./images/icon-check.svg" alt="" class="icon check" />
+      </section>
+
+      <section>
+        <ul class="list">
+          <li>
+            <div>
+              <span class="icon circle"></span>
+              <p>Text</p>
+            </div>
+            <img src="./images/icon-cross.svg" alt="" class="icon check" />
+          </li>
+        </ul>
+
+        <li>
+          <p><span>5</span> Itens pendentes</p>
+          <p>Excluir tudo</p>
+        </li>
+      </section>
+
+      <section>
+        <ul>
+          <li>Todos</li>
+          <li>Pendentes</li>
+          <li>Finalizados</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

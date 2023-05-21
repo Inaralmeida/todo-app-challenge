@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+  --bg: hsl(235, 21%, 11%);
+  --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+  --text: hsl(234, 39%, 85%);
+  --text2: hsl(236, 33%, 92%);
+  --border: hsl(234, 11%, 52%);
+  --line-hover: hsl(233, 14%, 35%);
+  --line: hsl(237, 14%, 26%);
+}
+body,
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1{
+  font-size: 30px;
+  letter-spacing: 15px;
+}
