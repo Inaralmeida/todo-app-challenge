@@ -25,6 +25,13 @@ section {
   margin-bottom: 10px;
 }
 
+.btn-theme {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-theme:hover {
+  transform: scale(1.2);
+}
 .box {
   width: 100%;
   height: 50px;
@@ -47,7 +54,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
-  border-bottom: 1px solid var(--line-hover);
+  border-bottom: 1px solid var(--lineHover);
 }
 
 .line div {
@@ -91,7 +98,7 @@ section {
   background-color: transparent;
   border: none;
   outline: none;
-  color: var(--text2);
+  color: var(--placeholder);
   font-size: 18px;
   line-height: 40px;
 }

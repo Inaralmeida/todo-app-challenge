@@ -5,16 +5,16 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-:root {
-  --primary:#c058f3;
+/* :root {
+  --primary: #c058f3;
   --bg: hsl(235, 21%, 11%);
   --line: hsl(235, 24%, 19%);
   --text: hsl(234, 39%, 85%);
   --text2: hsl(236, 33%, 92%);
   --border: hsl(234, 11%, 52%);
   --text3: hsl(233, 14%, 35%);
-  --line-hover: hsl(237, 14%, 26%);
-}
+  --lineHover: hsl(237, 14%, 26%);
+} */
 body,
 main {
   width: 100%;
@@ -24,4 +24,28 @@ main {
 h1 {
   font-size: 30px;
   letter-spacing: 15px;
+}
+
+[data-theme='dark'] {
+  --primary: #c058f3;
+  --bg: hsl(235, 21%, 11%);
+  --line: hsl(235, 24%, 19%);
+  --text: hsl(234, 39%, 85%);
+  --text2: hsl(236, 33%, 92%);
+  --border: hsl(234, 11%, 52%);
+  --text3: hsl(233, 14%, 35%);
+  --lineHover: hsl(237, 14%, 26%);
+  --placeholder: hsl(236, 33%, 92%);
+}
+
+[data-theme='ligth'] {
+  --primary: #c058f3;
+  --bg: #f2f2f2;
+  --line: hsl(0, 0%, 98%);
+  --text: hsl(235, 19%, 35%);
+  --border: hsl(240, 4%, 89%);
+  --text2: hsl(236, 33%, 92%);
+  --text3: hsl(0, 0%, 75%);
+  --lineHover: hsl(240, 4%, 89%);
+  --placeholder: hsl(234, 11%, 52%);
 }

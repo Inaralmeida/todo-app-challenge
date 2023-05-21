@@ -19,51 +19,46 @@
     <title>Todo app |Frontend Mentor</title>
     <script src="./js/main.js" defer type="module"></script>
   </head>
-  <body>
+  <body data-theme="dark">
     <main>
       <section class="header">
         <h1>TODO</h1>
-        <img src="./images/icon-sun.svg" class="btn-theme" />
+        <img
+          src="./images/icon-sun.svg"
+          class="btn-theme"
+          id="btn-theme"
+          role="button"
+          aria-roledescription="Ao clicar você troca o tema de dark para ligth ou vice e versar"
+        />
       </section>
 
       <section class="input-todo box line">
         <div>
-          <span class="icon circle checked"></span>
-          <input type="text" class="input-new-note" placeholder="Crie uma nova tarefa" />
+          <span class="icon circle"></span>
+          <input
+            type="text"
+            class="input-new-note"
+            id="input-new-note"
+            placeholder="Crie uma nova tarefa"
+            aria-label="Crie uma nova tarefa"
+          />
         </div>
-        <img src="./images/icon-check.svg" alt="" class="icon check" />
+        <span
+          id="btn-new-note"
+          class="checked circle"
+          role="button"
+          aria-roledescription="Clicque para adicionar a tarefa"
+        >
+          <img src="./images/icon-check.svg" alt="" class="icon check" />
+        </span>
       </section>
 
       <section class="box container-list">
-        <ul class="list">
-          <li class="line">
-            <div>
-              <span class="icon circle checked">
-                <img src="./images/icon-check.svg" alt="" class="check iconChecked" />
-              </span>
-              <p>Text</p>
-            </div>
-            <img src="./images/icon-cross.svg" alt="" class="icon check" />
-          </li>
-          <li class="line">
-            <div>
-              <span class="icon circle"></span>
-              <p>Text</p>
-            </div>
-            <img src="./images/icon-cross.svg" alt="" class="icon check" />
-          </li>
-          <li class="line">
-            <div>
-              <span class="icon circle"></span>
-              <p>Text</p>
-            </div>
-            <img src="./images/icon-cross.svg" alt="" class="icon check" />
-          </li>
-        </ul>
+        <ul class="list"></ul>
 
         <li class="infos box">
           <p><span>5</span> Itens pendentes</p>
-          <button class="btn-options">Excluir tudo</button>
+          <button class="btn-options" id="btn-delete-all">Excluir tudo</button>
         </li>
       </section>
 

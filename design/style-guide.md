@@ -31,7 +31,7 @@ The designs were created to the following widths:
 - text: hsl(234, 39%, 85%)
 - text2: hsl(236, 33%, 92%)
 - border: hsl(234, 11%, 52%)
-- line-hover: hsl(233, 14%, 35%)
+- lineHover: hsl(233, 14%, 35%)
 - line: hsl(237, 14%, 26%)
 
 ## Typography
@@ -45,8 +45,8 @@ The designs were created to the following widths:
 - Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 - Weights: 400, 700
 
-
 ### O que muda de cor com o tema
+
 - bg main (color - img)
 - icon btn set theme
 - bg item lists
