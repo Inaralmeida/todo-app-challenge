@@ -65,12 +65,14 @@ section {
   justify-content: center;
   border-radius: 50%;
   border: 1px solid var(--border);
+  cursor: pointer;
 }
 
 .checked {
   background: rgb(87, 221, 255);
   background: linear-gradient(127deg, rgba(87, 221, 255, 1) 23%, rgba(192, 88, 243, 1) 79%);
   border: none;
+  cursor: pointer;
 }
 
 .iconCheckNone {
