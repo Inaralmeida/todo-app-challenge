@@ -1,7 +1,16 @@
 @media screen and (max-width: 768px) {
-  main {
+  .bg-main {
     background-image: url(../images/bg-mobile-dark.jpg);
-    background-size: 100% 250px;
+    height: 200px;
+  }
+  section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    padding: 50px 20px;
   }
   section {
     width: 100%;
