@@ -60,6 +60,15 @@ section {
   justify-content: space-between;
   padding: 10px 15px;
   border-bottom: 1px solid var(--lineHover);
+  transition: all 0.3s;
+}
+
+.line:first-child {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.line:hover {
+  background-color: var(--hover);
 }
 
 .line div {
@@ -159,4 +168,23 @@ input::placeholder {
 .btn-options:active,
 .btn-options:hover {
   color: hsl(220, 98%, 61%);
+}
+
+.btn-delete {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px;
+  background-image: url("../images/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  transform: rotate(90deg);
 }

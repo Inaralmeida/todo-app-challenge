@@ -20,13 +20,14 @@ h1 {
 [data-theme="dark"] {
   --primary: #c058f3;
   --bg: hsl(235, 21%, 11%);
-  --line: hsl(235, 24%, 19%);
+  --line: #25273c;
   --text: hsl(234, 39%, 85%);
   --text2: hsl(236, 33%, 92%);
   --border: hsl(234, 11%, 52%);
   --text3: hsl(233, 14%, 35%);
   --lineHover: hsl(237, 14%, 26%);
   --placeholder: hsl(236, 33%, 92%);
+  --hover: #353753;
 }
 
 [data-theme="ligth"] {

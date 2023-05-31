@@ -1,3 +1,4 @@
+import { deleteNote } from "./actions.js";
 import { pQtdItens } from "./index.js";
 import { generateID, getStorage } from "./utils.js";
 
@@ -51,14 +52,15 @@ export const createNotes = (notes) => {
     const p = document.createElement("p");
     p.textContent = note.text;
 
-    const btnDelet = document.createElement("img");
-    btnDelet.src = "../images/icon-cross.svg";
+    const btnDelete = document.createElement("span");
+    btnDelete.classList.add("btn-delete");
+    btnDelete.onclick = () => deleteNote(note.id);
 
     div.appendChild(check);
     div.appendChild(p);
 
     line.appendChild(div);
-    line.appendChild(btnDelet);
+    line.appendChild(btnDelete);
 
     list.appendChild(line);
   });
