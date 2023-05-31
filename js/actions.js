@@ -18,3 +18,19 @@ export const deleteNote = (id) => {
   setStorage("notes", newList);
   createNotes(newList);
 };
+
+export const changeStatusTask = (id) => {
+  const storage = getStorage("notes");
+  const newList = storage.map((item) => {
+    if (item.id == id) {
+      return {
+        ...item,
+        completed: !item.completed,
+      };
+    } else {
+      return item;
+    }
+  });
+  setStorage("notes", newList);
+  createNotes(newList);
+};

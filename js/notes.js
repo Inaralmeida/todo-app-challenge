@@ -1,4 +1,4 @@
-import { deleteNote } from "./actions.js";
+import { changeStatusTask, deleteNote } from "./actions.js";
 import { pQtdItens } from "./index.js";
 import { generateID, getStorage } from "./utils.js";
 
@@ -40,6 +40,7 @@ export const createNotes = (notes) => {
   list.innerHTML = ``;
 
   notes.forEach((note) => {
+    console.log(note);
     const line = document.createElement("li");
     line.classList.add("line");
 
@@ -48,9 +49,21 @@ export const createNotes = (notes) => {
     const check = document.createElement("span");
     check.classList.add("icon");
     check.classList.add("circle");
+    check.onclick = () => changeStatusTask(note.id);
 
     const p = document.createElement("p");
     p.textContent = note.text;
+
+    if (note.completed) {
+      check.classList.add("checked");
+      const iconCheck = document.createElement("img");
+      iconCheck.src = "./images/icon-check.svg";
+      iconCheck.classList.add("icon");
+      iconCheck.classList.add("check");
+
+      check.appendChild(iconCheck);
+      p.classList.add("item-completed");
+    }
 
     const btnDelete = document.createElement("span");
     btnDelete.classList.add("btn-delete");

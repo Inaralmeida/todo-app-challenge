@@ -131,6 +131,13 @@ input::placeholder {
   color: var(--text);
   font-size: 16px;
   line-height: 40px;
+  transition: all 0.2s;
+}
+
+.item-completed {
+  text-decoration: line-through;
+  font-style: italic;
+  opacity: 0.6;
 }
 .line img {
   width: 14px;
