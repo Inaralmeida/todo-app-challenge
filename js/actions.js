@@ -1,8 +1,13 @@
-import { renderNotes } from './notes.js'
-import { setStorage } from './utils.js'
+import { textNewNote } from "./index.js";
+import { renderNotes, validateTextNote } from "./notes.js";
+import { setStorage } from "./utils.js";
 
 export const deleteAllNotes = () => {
-  setStorage('notes', [])
+  setStorage("notes", []);
+  renderNotes();
+};
 
-  renderNotes()
-}
+export const createNote = () => {
+  validateTextNote(textNewNote.value);
+  textNewNote.value = "";
+};

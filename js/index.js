@@ -4,3 +4,5 @@ export const textNewNote = document.querySelector("#input-new-note");
 export const btnDeleteAll = document.querySelector("#btn-delete-all");
 
 export const pQtdItens = document.querySelector("#qtd-itens-pendentes");
+
+export const body = document.querySelector("body");
