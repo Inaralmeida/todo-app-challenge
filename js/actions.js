@@ -34,3 +34,19 @@ export const changeStatusTask = (id) => {
   setStorage("notes", newList);
   createNotes(newList);
 };
+
+export const showTasksCompleted = () => {
+  const storage = getStorage("notes");
+  const newList = storage.filter((item) => item.completed);
+  createNotes(newList);
+};
+
+export const showTasksPending = () => {
+  const storage = getStorage("notes");
+  const newList = storage.filter((item) => !item.completed);
+  createNotes(newList);
+};
+
+export const showAllTasks = () => {
+  createNotes(getStorage("notes"));
+};

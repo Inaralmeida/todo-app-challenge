@@ -40,7 +40,6 @@ export const createNotes = (notes) => {
   list.innerHTML = ``;
 
   notes.forEach((note) => {
-    console.log(note);
     const line = document.createElement("li");
     line.classList.add("line");
 

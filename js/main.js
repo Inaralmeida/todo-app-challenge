@@ -1,8 +1,17 @@
-import { createNote, deleteAllNotes } from "./actions.js";
+import {
+  createNote,
+  deleteAllNotes,
+  showTasksCompleted,
+  showTasksPending,
+  showAllTasks,
+} from "./actions.js";
 import {
   body,
   btnDeleteAll,
   btnNewNote,
+  btnShowAll,
+  btnShowCompleted,
+  btnShowPending,
   btnTheme,
   textNewNote,
 } from "./index.js";
@@ -12,6 +21,9 @@ import { changeTheme, startTheme } from "./theme.js";
 btnTheme.addEventListener("click", changeTheme);
 btnDeleteAll.addEventListener("click", deleteAllNotes);
 btnNewNote.addEventListener("click", createNote);
+btnShowCompleted.addEventListener("click", showTasksCompleted);
+btnShowPending.addEventListener("click", showTasksPending);
+btnShowAll.addEventListener("click", showAllTasks);
 
 function startPage() {
   startTheme();
