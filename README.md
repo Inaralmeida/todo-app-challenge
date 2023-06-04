@@ -1,9 +1,9 @@
-# Frontend Mentor - Fylo landing page with two column layout
+# Frontend Mentor - ToDo App 
 
-![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)
+![Design preview ToDo App  challenge](./design/desktop-preview.jpg)
 
 ## Olá! 👋
-Esta é uma solução para a página inicial do Fylo com desafio de layout de duas colunas no Frontend Mentor.
+Esta é uma solução para o desafio ToDo App do Frontend Mentor.
 
 ### Construído com
 
