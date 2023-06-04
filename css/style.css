@@ -91,11 +91,7 @@ section {
 
 .checked {
   background: rgb(87, 221, 255);
-  background: linear-gradient(
-    127deg,
-    rgba(87, 221, 255, 1) 23%,
-    rgba(192, 88, 243, 1) 79%
-  );
+  background: linear-gradient(127deg, rgba(87, 221, 255, 1) 23%, rgba(192, 88, 243, 1) 79%);
   border: none;
   cursor: pointer;
 }
@@ -150,6 +146,11 @@ input::placeholder {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
+  border-radius: 8px;
+}
+
+.shadow {
+  box-shadow: 2px 2px 5px 1px var(--shadow), -2px -2px 5px 1px var(--shadow);
 }
 
 .infos {
@@ -164,6 +165,7 @@ input::placeholder {
   outline: none;
   color: var(--text3);
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .btns {
@@ -186,7 +188,7 @@ input::placeholder {
   border-radius: 50%;
   cursor: pointer;
   padding: 2px;
-  background-image: url("../images/icon-cross.svg");
+  background-image: url('../images/icon-cross.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: all 0.2s;
